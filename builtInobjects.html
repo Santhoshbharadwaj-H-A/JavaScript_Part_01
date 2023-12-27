@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built in objects</title>
+</head>
+<body>
+<script>
+    // javascript object --> local storage 
+    // two methods are present in the local storage setItem and getItem and removeItem
+    localStorage.setItem('name','santhosh') // storing in the key-value pair
+    let keyvalue = localStorage.getItem('name')
+    console.log(keyvalue)
+    // local storage only store thge strings 
+    let handnull = localStorage.removeItem('name')
+    console.log(handnull)
+    let newkeyvalue = localStorage.getItem('name')
+    console.log(newkeyvalue)
+
+    if (newkeyvalue == null){
+        localStorage.setItem('name','santhosh')
+    }
+    console.log(localStorage.getItem('name'))
+    
+</script>    
+</body>
+</html>

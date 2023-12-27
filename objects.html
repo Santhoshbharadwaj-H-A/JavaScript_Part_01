@@ -28,6 +28,50 @@
             delete objectName.addings;
             console.log(objectName)
             console.log(typeof objectName)
+
+            // Advanced object notation
+            // we can use the brackets insted of the (.) dot
+            console.log(objectName['names'])
+            
+            //we can use the bracket notation when we can not use the dot notation
+            
+            // objects can take any value like true or false, boolian ect 
+
+            // nested objects
+            const objectNames= {
+                names : "socks",
+                price : 1010,
+                rating : {
+                    stars : 4.5,
+                    counts : 87
+                },
+                fun:function functionone(){
+                    console.log("function inside the objects")
+                }
+            }
+            console.log(objectNames.rating.stars)
+            console.log(objectNames.fun())
+            objectNames.fun()
+        // functions are also values in the objects 
+
+        // imp:-  function inside the object is called the method
+        
+        // objects are the references
+        
+        // shortcut for the object
+        const object4={
+            message: "good job!",
+            price: 799
+        }
+
+        // const message = object4.message
+        // we can write the above message in the shortcut called destructuring
+
+        //const {message} = object4 // this is called destructuring 
+        // rewrite the above code 
+        const {message, price} = object4
+        console.log(message)
+        console.log(price)
                 </script>
 </body>
 </html>

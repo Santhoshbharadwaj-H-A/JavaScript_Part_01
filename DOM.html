@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>hello</button>
+
+    <button>hellos</button>
+
+    <!-- DOM is also an object in the javascipt -->
+    <!-- Document object represent the models in the webpage so it is called Document object Model -->
+    <script>
+        document.body.innerHTML ="hello";
+        document.title ="DOM";
+    // important features of javascript is that it has we can have the html inside the javascript
+    // DOM combines both HTML and javascript together
+
+    // innerHTML method give complete control over the html code we have
+    //ex:- 
+    document.body.innerHTML ="<button>God job!</button>"
+
+    //  "document.body.innerHTML" this line make to select entire body
+
+    //query selector method
+//Ex:-  document.querySelector() --> it makes to select the single element in the html
+
+// it will select the any element from the html and put it in the javascript
+
+
+console.log(document.querySelector('button'))
+
+document.querySelector('button').innerHTML ="great job, great" // innerHTML allow to javascript to access the text inside the button
+
+// for Selecting the TEXT inside the HTML we can replace the inner.HTML to the inner.Text, it only select the text in the element  
+</script>
+</body>
+</html>

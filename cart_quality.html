@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart_Quality_Project</title>
+</head>
+<body>
+<button onclick="
+    console.log(`Cart_Quality : ${CartQuality}`)
+    ">Show_Quality</button>    
+<button onclick="
+CartQuality = CartQuality + 1
+console.log(`Cart_Quality: ${CartQuality} `)
+">Add to Cart</button>   
+<button onclick="
+CartQuality = CartQuality + 2
+console.log(`Cart_Quality: ${CartQuality} `)
+">+2</button>   
+<button onclick="
+CartQuality = CartQuality + 3
+console.log(`Cart_Quality: ${CartQuality} `)
+">+3</button>   
+<button onclick="
+CartQuality = 0;
+console.log(`Cart_Quality is resetted`)
+console.log(`cart Cart_Quality: ${CartQuality}`)
+">Reset Cart</button>   
+
+<script>
+    let CartQuality = 0;
+</script>
+</body>
+</html>

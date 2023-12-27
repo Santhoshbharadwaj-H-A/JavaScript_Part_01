@@ -1,0 +1,1 @@
+// onclick is the attribute  of the JavaScript, it will do the action on cliking the variable 

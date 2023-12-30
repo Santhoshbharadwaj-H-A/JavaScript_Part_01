@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Arrays and loops</title>
+</head>
+<body>
+    <!-- Arrays are the another type of value, represent the list of values-->
+    
+    <script>
+    const myArray = [10,20,30];
+    console.log(myArray)
+    const  myArray01 = [10,20,30, {name: 'santhosh'}, [1,20,30]]
+    console.log(myArray01)
+    console.log(myArray01[3])
+    console.log(myArray01[3])
+    
+    // array is actually an object 
+    console.log(typeof myArray)
+
+    // to check it is array or not 
+    console.log(Array.isArray[10,20,30])
+
+
+    console.log(myArray[0])
+
+    //  lenght of the array 
+    console.log(myArray01.length)
+
+    // adding the a element to the array at the end 
+
+    myArray01.push(200)
+
+    console.log(myArray01)
+
+    myArray01.splice(1,2)
+    // remove the element in the array i.e splice(starting index,how many element from that index)
+    console.log(myArray01)
+
+    // looping through an array 
+    const exArray =[
+        "first_name",
+        "last_name",
+        "dob",
+        "height",
+        "weight"
+    ]
+    console.log(exArray)
+    console.log(exArray.length)
+    // accesing the array wiht the for loops
+
+    for (let index = 0; index <= exArray.length-1; index ++){
+        const value = exArray[index];
+        console.log(value);
+    }
+
+    // anther type of looping through the array is accumelator pattern
+
+    const nums = [1,2,3,4];
+    let total = 0; 
+
+for(let i=0; i<= nums.lenght; i++){
+    const sum = nums[i]
+    total = total+sum;
+    i++;
+    console.log(total)
+    }
+console.log(total)
+console.log(nums)
+
+// arrays are the refrences it points to the object in the computer memory
+let array1 = [1,2,3,4,5];
+let array2 = array1;
+console.log(array1)
+console.log(array2)
+array2.push(array1)
+console.log(array1)
+console.log(array2)
+
+// .slice() method, what it will do is make the copy of the array, now array3 refer to the different memory location then the array1
+
+const array3 = array1.slice()
+
+// array shortcut or the destructuring 
+
+const [firstValue, secondValue] = [1,2,3,4,5]
+
+console.log(firstValue);
+console.log(secondValue);
+</script>
+</body>
+</html>

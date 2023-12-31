@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced function</title>
+</head>
+<body>
+    <script>
+        console.log("advanced javascript function")
+
+        // we can store the function in the variable 
+
+        const num = 2;
+        let function2 = function function1() {
+            console.log("we can store the function as a variable")
+        }
+        console.log(function2)
+        function2();
+    //  function without the name is called the anonymous function
+    let anonymousFunction = function(){
+        console.log("function without name is called the anymous function")
+    }
+
+     // javascript hositing we can call the fuction without any order 
+
+    //shortfor the function
+      let shortFunction = function(){
+        console.log("this is the shortcut for the function")
+      }
+      console.log(shortFunction())
+     
+    // we can also sent a function inside a fucntion
+    
+    // set time out function method, we can call this  set time out like on what time it should  execute the function
+
+    setTimeout( function(){
+        console.log("set time out function, 'in millisecond',")
+    },10000
+    )
+    // in execution what JS do is to set a timer for the time defined, the it will move on to the next execution on the timer run it will execute  
+    setInterval( function(){
+        console.log("set time out function, 'in millisecond',")
+    },1000
+    )
+
+    ["first_name","last_name","middle_name"].foreach(function(value, index){
+       console.log(value); 
+    });
+    // forEach
+    </script>
+</body>
+</html>
